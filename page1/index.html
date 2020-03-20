@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body id="b">
+
+
+    <div id="croix" class="closebtn" onclick="closeNav()">
+        <i class="fas fa-times"></i>
+    </div>
+
+
+    <div class="sidebar-right " id="mySidebar">
+        <a href="javascript:void(0)" class="openbtn" id="bars" onclick="openNav()">☰</a>
+        <div id="main">
+            <ul class="blue" id="main2">
+                <li><a href="#">le centre d'art</a></li>
+                <li><a href="#">actualités</a></li>
+                <li><a href="#">les éditions</a></li>
+                <li><a href="#">résidences d'artistes</a></li>
+                <li><a href="#">exposition</a></li>
+                <li><a href="#">atelier du regard</a></li>
+                <li><a href="#">visite</a></li>
+                <li><a href="#">resources</a></li>
+
+
+            </ul>
+
+            <section class="lava" id='rotate'>
+                <p>centre d'art gwinzegal</p>
+            </section>
+
+            <section class="bas" id="no-rotate">
+                <p>centre d'art gwinzegal<br>3 rue auguste pavie<br> 22200 guingapmp</p>
+            </section>
+        </div>
+
+    </div>
+
+
+
+
+    <section class="title" id='propos'>
+        <h2>à propos</h2>
+    </section>
+
+    <section class='content'>
+
+        <p>Le centre d'art et de recherche Gwinzegal se définit<br> comme une platforme de travaille pour aborder les différente facettes de la photographiie telle qu'elle <br>se crée, se produit , se diffuse, fait l'objet d'étude, s'édite, <br>se collectionne
+            dans la société contemporaine.<br>
+
+            <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> do eiusmod tempor incididunt ut labore et dolore<br> magna aliqua. Ut enim ad minim veniam,<br> quis nostrud exercitation ullamco laboris nisi ut aliquip <br>ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu <br> nulla pariatur. Excepteur sint occaecat cupidatat non proident, sun culpa quincy<br> .
+
+        </p>
+
+        <div class="img">
+            <img src="./img/img1.bmp" alt="img">
+        </div>
+
+        </p>
+
+    </section>
+
+
+    <section class="lang">
+
+        <section class="a"></section>
+        <section class="b"></section>
+        <section class="c">
+
+        </section>
+        <section class="d">
+            <h4>EN</h4>
+
+            <div class="vertical">
+                <h4>follow</h4>
+            </div>
+
+        </section>
+
+    </section>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "188px";
+            document.getElementById("main2").style.display = "block";
+            document.getElementById('croix').style.display = "block";
+            document.getElementById('bars').style.display = "none";
+            document.getElementById('rotate').style.display = 'none';
+            document.getElementById('no-rotate').style.display = 'block';
+            document.getElementById("b").style.transform = 'translateX(+11px)';
+            
+        }
+
+        function closeNav() {
+            document.getElementById('croix').style.display = "none";
+            document.getElementById("main2").style.display = "none";
+            document.getElementById('mySidebar').style.width = '77px';
+            document.getElementById('bars').style.display = "block";
+            document.getElementById('rotate').style.display = 'block';
+            document.getElementById('no-rotate').style.display = "none";
+
+            document.getElementById("b").style.transform = 'translateX(-33px)';
+
+
+        }
+        
+    </script>
+
+
+
+</body>
+
+</html>
