@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" 
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+      
+    
+   
+   
+       
+        <div class="sidebar-right " id="mySidebar">
+            <a href="javascript:void(0)" class="openbtn" id="bars" onclick="openNav()">☰</a>
+                <div id="main">
+                            <ul class="blue">
+                                    <li><a href="#">le centre d'art</a></li>
+                                    <li><a href="#">actualités</a></li>
+                                    <li><a href="#">les éditions</a></li>
+                                    <li><a href="#">résidences d'artistes</a></li>
+                                    <li><a href="#">exposition</a></li>
+                                    <li><a href="#">atelier du regard</a></li>
+                                    <li><a href="#">visite</a></li>
+                                    <li><a href="#">resources</a></li>
+                                    
+                                    
+                            </ul>
+
+                            <section  class="lava" >
+                                <p id="rotate">centre d'art gwinzegal</p>
+                          
+                            </section> 
+                           
+                            <section class="bas">
+                                centre d'art gwinzegal<br>3 rue auguste pavie<br>
+                                22200 guingapmp
+                            </section>    
+                </div>
+                        
+        </div>
+        
+
+
+
+        
+
+
+
+                
+                <div id="croix-bas" class="closebtn" >
+                  <p>X</p>
+               
+                </div> 
+           
+      
+            <section class='conti'>
+                <div class="aa">
+                    <h1>INFO</h1>
+                </div>
+                <div class="bb">
+                    <h1>FYFTY-FYFTY</h1>
+                    <h2>Samuel Gratacap</h2>
+                </div>
+                <div class="cc">
+                    <h1>1/4</h1>
+                </div>
+
+      
+            </section>
+
+        <div class="img">
+            <img src="./img/img1.bmp" alt="img">
+        </div>
+            
+      
+
+        
+            <section class="lang">
+
+                <section class="a"></section>
+                <section class="b"></section>
+                <section class= "c">
+                    
+                </section>
+                <section class="d">
+                    <h4>EN</h4>
+
+                    <div class="vertical">
+                        <h4>follow</h4>
+                    </div>
+                    
+                </section>
+
+            </section>
+
+            <script>
+                function openNav() {
+                  document.getElementById("mySidebar").style.width = "188px";
+                  document.getElementById("main").style.display = "block";
+                  document.getElementById('croix').style.display = "block";
+                  document.getElementById('bars').style.display ="none";
+                  document.getElementById('rotate').style.display = "none";
+
+                }
+                
+                function closeNav() {
+                  document.getElementById('croix').style.display="none";
+                  document.getElementById("main").style.display= "none";
+                  document.getElementById('mySidebar').style.width = '77px';
+                  document.getElementById('bars').style.display ="block";
+                  document.getElementsById('rotate').style.display = 'block';
+                  document.getElementById('rotate').style.writingMode = 'vertical-lr';
+                  
+                }
+                </script>
+          
+           
+    
+</body>
+</html>
